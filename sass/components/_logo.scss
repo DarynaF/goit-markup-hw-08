@@ -6,10 +6,16 @@
     line-height: 1.19;
     letter-spacing: var(--letter-spacing);
     color: var(--color-black);
-    margin-right: 93px;
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    
+}
+
+@media (min-width: 767px) {
+    .logo {
+        margin-right: 93px;
+    }
 }
 
 .web-header {
