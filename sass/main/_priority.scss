@@ -1,0 +1,36 @@
+.priority {
+    background-color: var(--background-color);
+}
+
+
+.priority__list {
+    display: flex;
+    column-gap: var(--card-set-gap);
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.priority__titel {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing);
+    color: var(--tittel-text-color);
+    margin-bottom: 10px;
+}
+
+.priority__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.priority__icon {
+    max-width: 270;
+    height: 120;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--bacground-comand-color);
+    border-radius: 4px;
+}
