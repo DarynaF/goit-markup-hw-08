@@ -39,3 +39,9 @@
     column-gap: var(--card-set-gap);
     flex-basis: calc((100% - 60px) / 3);
 }
+
+@media (max-width: 1199px) {
+    .work-with {
+        display: none;
+    }
+}

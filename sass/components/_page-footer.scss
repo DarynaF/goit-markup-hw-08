@@ -7,13 +7,71 @@
     background-color: var(--background-hf-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 252px;
+    height: 603px;
+    
+        @media screen and (min-width: 768px) {
+            height: 463px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            height: 252px;
+        }
 }
 
+@media screen and (min-width: 1200px) {
+    .footer__link-wrapper {
+        margin-right: 70px;
+    }
+}
 
+.footer__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__logo {
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 0;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
 
 .footer__adress {
-    margin-top: 20px;
+        margin-bottom: 60px;
+        text-align: center;
+    
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            margin-bottom: 0;
+        }
 }
 
 .footer__address-item:not(:last-child) {
@@ -69,20 +127,37 @@
 
 .footer__link-wrapper {
     margin-right: 70px;
+    
+    @media screen and (max-width: 1200px) {
+            text-align: center;
+            margin-right: 0;
+            justify-content: space-between;
+        }
 }
 
 .text-footer-icon {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-
+    text-align: center;
     color: var(--background-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
 }
 
 .list-icon-wrapper {
     display: flex;
+    
 }
+@media screen and (min-width: 1200px) {
+    .list-icon-wrapper {
+        margin-right: auto;
+    }
+}
+
 
 .item-footer-icon:not(:last-child) {
     margin-right: 10px;
@@ -113,20 +188,40 @@
 
 .footer-icon-wrapper {
     margin-right: auto;
+    @media screen and (max-width: 1200px) {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 80px;
+        }
 }
 
-.footer-form {
-    display: flex;
 
+
+@media screen and (min-width: 1200px) {
+    .footer-form {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subscription-wrapper {
+        width: 100%;
+    }
 }
 
 .subscription-title {
-    margin-right: 12px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--background-color);
+        text-align: center;
+        margin-right: 12px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--background-color);
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+    
 }
 
 .icon-subscribe {
@@ -135,10 +230,10 @@
 }
 
 .subscription-input {
-    margin-top: 0;
-    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -151,20 +246,32 @@
      &:focus {
                 border-color: var(--background-color);
             }
-}
+
+        @media screen and (min-width: 768px) {
+                            width: 450px;
+                        }
+            
+         @media screen and (min-width: 1200px) {
+                            margin-right: 12px;
+                            width: 358px;
+                        }
+    }
 
 
 
 .subscription-btn {
-    margin-top: 0;
-    display: inline-flex;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     padding: 10px 28px;
     width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
+    text-align: center;
     border: none;
     border-radius: 4px;
     background-color: var(--accent-color);
@@ -177,5 +284,9 @@
     &:hover {
         background-color: var(--btn-background-color);
     }
+        
+    @media screen and (min-width: 1200px) {
+            margin-top: 20px;
+        }
 }
 

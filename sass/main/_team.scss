@@ -1,5 +1,6 @@
 .team {
     background-color: var(--bacground-comand-color);
+
 }
 
 .team__titel {
@@ -25,10 +26,12 @@
     flex-wrap: wrap;
     column-gap: var(--card-set-gap);
     flex-basis: calc((100% - 90px) / 4);
+    justify-content: center;
 }
 
 .team-list__person {
     background-color: var(--background-color);
+    margin-bottom: 30px;
 }
 
 .team-list__name {
@@ -48,6 +51,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: var(--letter-spacing);
+    margin-top: 10px;
 }
 
 
