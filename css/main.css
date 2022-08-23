@@ -762,12 +762,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    height: 463px;
+    height: max-content;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    height: 252px;
+    height: max-content;
   }
 }
 
@@ -1214,10 +1214,33 @@ body {
 .portfolio-list-btn {
   background-color: var(--background-color);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   column-gap: 8px;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list-btn {
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list-btn {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+  }
+}
+
+.portfolio-nav-list:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-nav-list:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-nav-btn {
@@ -1246,11 +1269,39 @@ body {
 }
 
 .portfolio-projects {
-  background-color: var(--background-color);
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: var(--card-set-gap);
-  flex-basis: calc((100% - 90px) / 3);
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-projects {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-projects {
+    justify-content: center;
+  }
+}
+
+.portfolio-project-img {
+  flex-basis: calc(100% - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-project-img {
+    flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-project-img {
+    flex-basis: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+  }
 }
 
 .portfolio-project {

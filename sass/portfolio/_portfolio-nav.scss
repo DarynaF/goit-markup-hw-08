@@ -1,10 +1,30 @@
 .portfolio-list-btn {
     background-color: var(--background-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
     column-gap: 8px;
-    margin-bottom: 50px;
+    
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin: 0 auto;
+            margin-bottom: 50px;
+            flex-wrap: nowrap;
+        }
+}
+
+.portfolio-nav-list:not(:last-child) {
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .portfolio-nav-btn {
