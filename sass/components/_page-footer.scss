@@ -64,14 +64,17 @@
     }
 }
 
+ 
 .footer__adress {
         margin-bottom: 60px;
         text-align: center;
+        margin-top: 20px;
     
         @media screen and (min-width: 1200px) {
             text-align: left;
             margin-bottom: 0;
         }
+
 }
 
 .footer__address-item:not(:last-child) {

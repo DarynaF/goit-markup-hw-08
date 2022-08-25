@@ -72,9 +72,12 @@
     border-radius: 2px;
 }
 
-.site-nav__item {
+.site-nav__item:not(:first-child){
     margin-left: 50px;
 }
+
+
+
 
 .header-contacts {
     display: flex;
@@ -121,7 +124,20 @@
     &:focus {
         color: var(--accent-color)
     }
+
+      
 }
+ 
+.site-nav__item-phone { 
+    margin-top: 10px;
+    
+    @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    margin-top: 0px;  
+  } 
+}
+   
+
 
 
 

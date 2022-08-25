@@ -100,15 +100,15 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
 
-}
-
-@media screen and (min-width: 1200px) {
-    .hero__tittle {
+    @media screen and (min-width: 1200px) {
+    
         max-width: 696px;
         font-size: 44px;
         line-height: 1.36;
-    }
 }
+}
+
+
 
 .hero__btn {
     font-family: inherit;
